@@ -13,6 +13,7 @@ h1 {
     font-weight: 200;
     color: #F5F5EF;
     text-align: center;
+    /* padding-right: 80px; */
 }
 
 
@@ -160,7 +161,6 @@ h1 {
 
 
 /* second container mobile */
-
 @media (max-width: 480px) {    
     .Carla{
         height: 200px;
@@ -200,6 +200,14 @@ h1 {
     border: solid 30px #C9CFBD;
 }
 
+.iconos:hover {
+    height: 60px;
+    background-color: #F5F5EF;
+    border-radius: 35%;
+    border: solid 30px #F5F5EF;
+}
+
+
 .primer-icono {
     align-self: end;
     margin-bottom: 50px;
@@ -225,13 +233,13 @@ h1 {
     align-items: center;
     flex-direction: column;
     background-color: #C0B7B4;
+    padding-left: 50px;
+    padding-right: 50px;
 }
-
-
 
 .mis-trabajos{
     font-size: 3rem;
-    font-weight: 200;
+    font-weight: 400;
 }
 
 .iconos {
@@ -252,6 +260,5 @@ h1 {
 .tercer-icono {
 margin-top: 0px;
 }
-
 }
 
