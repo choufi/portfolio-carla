@@ -162,6 +162,11 @@ h1 {
 
 /* second container mobile */
 @media (max-width: 480px) {    
+
+    #second-container {
+        padding-top: 50px;
+    }
+
     .Carla{
         height: 200px;
     }
@@ -233,8 +238,6 @@ h1 {
     align-items: center;
     flex-direction: column;
     background-color: #C0B7B4;
-    padding-left: 50px;
-    padding-right: 50px;
 }
 
 .mis-trabajos{
@@ -251,6 +254,7 @@ h1 {
 
 .primer-icono {
     margin: none;
+    align-self: center;
 }
 
 .segundo-icono {
@@ -258,7 +262,33 @@ h1 {
 }
 
 .tercer-icono {
-margin-top: 0px;
+    margin-top: 0px;
+    align-self: center;
+
 }
+}
+
+
+/* carousel */
+
+#carouselExampleDark{
+    background-color: #F5F5EF;
+}
+
+#carouselExampleDark > div.carousel-indicators > button.active{
+    background-color: #C9CFBD;
+}
+
+
+#carouselExampleDark > div.carousel-inner > div.carousel-item{
+    display: flex;
+    height: 100vh;
+    padding: 5% 25% 5% 25%; 
+}
+
+
+
+#carouselExampleDark > div.carousel-inner > div.carousel-item.active > img{
+    border-radius: 5%;
 }
 
