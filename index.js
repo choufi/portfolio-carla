@@ -10,3 +10,14 @@ $(".header-photo").on("mouseout", function() {
   $(this).attr("src", "./Assets/Images/" + idSelectedImage + ".png");
  })
 
+
+ // al pasar con el ratón por encima de los iconos de la sección "mis trabajos", se devuleve la misma imagen pero con color rosa
+ $(".iconos").on("mouseover", function() {
+  var idSelectedImage = $(this).attr("id");
+  $(this).attr("src", "Assets/Images/Iconos peluqeria/" + idSelectedImage + "-rosa.png");     })
+
+// al quitar el ratón se vuelve a la imagen anterior
+$(".iconos").on("mouseout", function() {
+  var idSelectedImage = $(this).attr("id");
+  $(this).attr("src", "Assets/Images/Iconos peluqeria/" + idSelectedImage + "-verde.png");     })
+

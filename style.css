@@ -8,7 +8,7 @@ body {
 /* header */
 /* desktop */
 
-h1 {
+.titulo {
     font-size: 4rem;
     font-weight: 600;
     color: #5D4E49;
@@ -34,11 +34,12 @@ h1 {
     min-width: 300px;
     width: 40%;
     align-items: center;
+    justify-content: center;
 }
 
 .header-photo{
-    height: 150px;
-    width: 150px;
+    height: 250px;
+    width: 250px;
     border-radius: 50%;
 }
 
@@ -57,35 +58,35 @@ h1 {
     grid-row-end: 3;
     grid-column-end: 3;
  }
- 
- 
- 
+
+
+
  .second{
      justify-self: start;
      align-self: end;
      grid-row-end: 3;
      grid-column-start: 2;
      z-index: 1;
-     
+
  }
- 
+
  .third{
      justify-self: end;
      align-self: start;
      grid-row-start: 2;
      grid-column-end: 3;
  }
- 
+
  .fourth{
      justify-self: start;
      align-self: start;
      grid-row-start: 2;
      grid-column-start: 2;
- 
+
  }
 
 
-  
+
 /* header */
 /* mobile */
 @media (max-width: 480px) {
@@ -93,13 +94,14 @@ h1 {
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: auto;
+        height: 100vh;
     }
 
     .div-text{
         width: 100%;
         height: 50vh;
         justify-content: space-around;
+        align-items: normal;
     }
 
     .div-images{
@@ -113,11 +115,18 @@ h1 {
         border-radius: 50%;
     }
 
-    h1 {
-        font-size: 3rem;
+    .titulo {
+        font-size: 4rem;
+        font-weight: 400;
         text-align: center;
-        
     }
+
+    .header-photo{
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+    }
+    
 }
 
 
@@ -145,6 +154,7 @@ h1 {
 
 
 .my-text{
+    color: #5D4E49;
     width: 40%;
     min-width: 300px;
     justify-content: center;
@@ -154,7 +164,7 @@ h1 {
 
 
 /* second container mobile */
-@media (max-width: 480px) {    
+@media (max-width: 480px) {
 
     #second-container {
         padding-top: 50px;
@@ -163,74 +173,77 @@ h1 {
     .Carla{
         height: 200px;
     }
-      
-    
+
     .my-text{
         text-align: center;
     }
 }
 
 
-/* third container desktop */
+/* third container desktop MIS TRABAJOS*/
 #third-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #C0B7B4;
+    height: 100vh;
+    flex-wrap: wrap;
+    justify-content: space-around;  
+}
+
+.iconos-seccion{
     display: flex;
     flex-direction: row;
     background-color: #C0B7B4;
-    height: 100vh;
     justify-content: space-around;
+    align-content: center;
     flex-wrap: wrap;
 }
 
 .titulo-seccion{
     display: flex;
+    justify-content: center;
 }
 
 .mis-trabajos{
     font-size: 3rem;
     align-self: center;
     font-weight: 200;
+    color: #5D4E49;
 }
 
 .iconos {
-    height: 50px;
-    background-color: #C9CFBD;
-    border-radius: 35%;
-    border: solid 30px #C9CFBD;
+    height: 150px;
+    border-radius: 50%;
 }
 
 .iconos:hover {
-    height: 60px;
-    background-color: #F5F5EF;
-    border-radius: 35%;
-    border: solid 30px #F5F5EF;
+    border-radius: 50%;
 }
 
 
-.primer-icono {
-    align-self: end;
-    margin-bottom: 50px;
-}
-
-.segundo-icono {
-    align-self: center;
-    margin-bottom: 50px;
-}
-
-.tercer-icono {
-    align-self: start;
-    margin-top: 50px;
-}
 
 /* third container mobile */
 
-@media (max-width: 480px) {    
+@media (max-width: 480px) {
+
 #third-container{
     width: 100%;
+    height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
     background-color: #C0B7B4;
+}
+
+.iconos-seccion{
+    display: flex;
+    flex-direction: column;
+    background-color: #C0B7B4;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .mis-trabajos{
@@ -239,13 +252,12 @@ h1 {
 }
 
 .iconos {
-    height: 50px;
-    background-color: #C9CFBD;
-    border-radius: 35%;
-    border: solid 30px #C9CFBD;
+    height: 100px;
+    border-radius: 50%;
 }
 
-.primer-icono {
+
+/* .primer-icono {
     margin: none;
     align-self: center;
 }
@@ -257,10 +269,9 @@ h1 {
 .tercer-icono {
     margin-top: 0px;
     align-self: center;
-
 }
+} */
 }
-
 
 /* carousel */
 
@@ -276,22 +287,22 @@ h1 {
 #carouselExampleDark > div.carousel-inner > div.carousel-item{
     display: flex;
     height: 100vh;
-    padding: 5% 25% 5% 25%; 
-}
-
-
-
-#carouselExampleDark > div.carousel-inner > div.carousel-item.active > img{
-    border-radius: 5%;
+    padding: 5% 25% 5% 25%;
 }
 
 
 /* carousel mobile */
-@media (max-width: 480px) {    
+@media (max-width: 480px) {
     #carouselExampleDark > div.carousel-inner.carousel-fade > div.carousel-item.active.justify-content-center > img{
         height: 50%;
+        margin-right: 50px;
+        margin-left: 50px;
     }
+
+
 }
+
+
 
 
 
@@ -309,5 +320,5 @@ body > nav > div {
 }
 
 #navbarNavDropdown > ul > li.nav-item.dropdown > ul{
-    background-color: #C9CFBD; 
+    background-color: #C9CFBD;
 }
