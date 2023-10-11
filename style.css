@@ -246,6 +246,17 @@ body {
     gap: 20px;
 }
 
+/* prueba con la clase de abajo sino borramos */
+.centrados{
+    display: flex;
+    flex-direction: column;
+    background-color: #C0B7B4;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
 .mis-trabajos{
     font-size: 3rem;
     font-weight: 400;
@@ -322,3 +333,7 @@ body > nav > div {
 #navbarNavDropdown > ul > li.nav-item.dropdown > ul{
     background-color: #C9CFBD;
 }
+
+
+
+  
