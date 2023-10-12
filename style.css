@@ -246,17 +246,6 @@ body {
     gap: 20px;
 }
 
-/* prueba con la clase de abajo sino borramos */
-.centrados{
-    display: flex;
-    flex-direction: column;
-    background-color: #C0B7B4;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
 .mis-trabajos{
     font-size: 3rem;
     font-weight: 400;
@@ -267,22 +256,65 @@ body {
     border-radius: 50%;
 }
 
-
-/* .primer-icono {
-    margin: none;
-    align-self: center;
 }
 
-.segundo-icono {
-    margin: none;
+
+/* SECCIÓN botón contacto DESKTOP*/
+.btn-flotante {
+	font-size: 10px; /* Cambiar el tamaño de la tipografia */
+	text-transform: uppercase; /* Texto en mayusculas */
+    text-align: center;
+	font-weight: bold; /* Fuente en negrita o bold */
+	width: 100px;
+    height: 100px;
+    color: #F5F5EF; /* Color del texto */
+	border-radius: 50px; /* Borde del boton */
+	letter-spacing: 2px; /* Espacio entre letras */
+	background-color: #5D4E49; /* Color de fondo */
+	position: fixed;
+	bottom: 40px;
+	right: 40px;
+	transition: all 300ms ease 0ms;
+	box-shadow: 0px 8px 15px #C0B7B4 (0, 0, 0, 0.1);
+	z-index: 99;
 }
 
-.tercer-icono {
-    margin-top: 0px;
-    align-self: center;
+.btn-flotante:hover {
+	font-size: 10px; /* Cambiar el tamaño de la tipografia */
+	text-transform: uppercase; /* Texto en mayusculas */
+    text-align: center;
+	font-weight: bold; /* Fuente en negrita o bold */
+	width: 100px;
+    height: 100px;
+    color: #5D4E49; /* Color del texto */
+	border-radius: 50px; /* Borde del boton */
+	letter-spacing: 2px; /* Espacio entre letras */
+	background-color: #C0B7B4; /* Color de fondo */
+	position: fixed;
+	bottom: 40px;
+	right: 40px;
+	transition: all 300ms ease 0ms;
+	box-shadow: 0px 8px 15px #C0B7B4 (0, 0, 0, 0.1);
+	z-index: 99;
 }
-} */
+
+
+/* SECCIÓN botón contacto MOBILE*/
+@media (max-width: 480px) {
+.btn-flotante {
+	width: 80px;
+    height: 80px;
+	letter-spacing: 1px; /* Espacio entre letras */
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
 }
+}
+
+
+
+
+
 
 /* carousel */
 
@@ -312,7 +344,6 @@ body {
 
 
 }
-
 
 
 
