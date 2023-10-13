@@ -9,10 +9,13 @@ body {
 /* desktop */
 
 .titulo {
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: 600;
     color: #5D4E49;
     text-align: center;
+    text-transform: uppercase;
+    transform: scale(.5 , 1);
+    letter-spacing: 2rem; /* Espacio entre letras */
 }
 
 
@@ -20,7 +23,7 @@ body {
     display: flex;
     flex-direction: row;
     background-color: #C0B7B4;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     justify-content: center;
     justify-items: center;
@@ -89,7 +92,7 @@ body {
 
 /* header */
 /* mobile */
-@media (max-width: 480px) {
+@media (max-width: 900px) {
     #first-container {
         display: flex;
         flex-direction: column;
@@ -107,6 +110,7 @@ body {
     .div-images{
         height: 40vh;
         width: 100%;
+        padding-bottom: 60px;
     }
 
     .header-photo{
@@ -138,7 +142,7 @@ body {
     background-color: #C9CFBD;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .Carla{
@@ -164,10 +168,11 @@ body {
 
 
 /* second container mobile */
-@media (max-width: 480px) {
-
+@media (max-width: 900px) {
     #second-container {
+        min-height: 100vh;
         padding-top: 50px;
+        padding-bottom: 50px;
     }
 
     .Carla{
@@ -185,7 +190,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #C0B7B4;
-    height: 100vh;
+    min-height: 100vh;
     flex-wrap: wrap;
     justify-content: space-around;  
 }
@@ -204,12 +209,7 @@ body {
     justify-content: center;
 }
 
-.mis-trabajos{
-    font-size: 3rem;
-    align-self: center;
-    font-weight: 200;
-    color: #5D4E49;
-}
+
 
 .iconos {
     height: 150px;
@@ -224,16 +224,19 @@ body {
 
 /* third container mobile */
 
-@media (max-width: 480px) {
+@media (max-width: 900px) {
 
 #third-container{
     width: 100%;
-    height: 100vh;
+    flex-direction: column;
+    align-content: space-around;
+    min-height: 100vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    flex-direction: column;
     background-color: #C0B7B4;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .iconos-seccion{
@@ -246,21 +249,18 @@ body {
     gap: 20px;
 }
 
-.mis-trabajos{
-    font-size: 3rem;
-    font-weight: 400;
-}
 
 .iconos {
-    height: 100px;
+    height: 90px;
     border-radius: 50%;
 }
-
 }
 
 
 /* SECCIÓN botón contacto DESKTOP*/
-.btn-flotante {
+
+/* ESTILO PARA EL BOTÓN CON DROPDOWN */
+body > div.btn-group.dropup > button{
 	font-size: 10px; /* Cambiar el tamaño de la tipografia */
 	text-transform: uppercase; /* Texto en mayusculas */
     text-align: center;
@@ -276,33 +276,38 @@ body {
 	right: 40px;
 	transition: all 300ms ease 0ms;
 	box-shadow: 0px 8px 15px #C0B7B4 (0, 0, 0, 0.1);
-	z-index: 99;
+	z-index: 100;
 }
 
-.btn-flotante:hover {
-	font-size: 10px; /* Cambiar el tamaño de la tipografia */
-	text-transform: uppercase; /* Texto en mayusculas */
-    text-align: center;
-	font-weight: bold; /* Fuente en negrita o bold */
-	width: 100px;
-    height: 100px;
-    color: #5D4E49; /* Color del texto */
-	border-radius: 50px; /* Borde del boton */
-	letter-spacing: 2px; /* Espacio entre letras */
-	background-color: #C0B7B4; /* Color de fondo */
-	position: fixed;
-	bottom: 40px;
-	right: 40px;
-	transition: all 300ms ease 0ms;
-	box-shadow: 0px 8px 15px #C0B7B4 (0, 0, 0, 0.1);
-	z-index: 99;
+/* Color de fondo botón cambia al hacer hover*/
+body > div.btn-group.dropup > button:hover{
+	background-color: #C9CFBD; 
 }
+
+/* el span lo pongo como img  */
+.img-boton{
+    display: inline;
+    height: 20px;
+}
+
+/* ESTILO DESPLEGABLE */
+body > div.btn-group.dropup > div{
+    background-color: #E4D0D0;
+    border-color: #5D4E49;
+}
+
+/* elementos DESPLEGABLE */
+.elementos-lista-desplegable{
+    text-decoration: none;
+    color: #5D4E49;
+}
+
 
 
 /* SECCIÓN botón contacto MOBILE*/
-@media (max-width: 480px) {
-.btn-flotante {
-	width: 80px;
+@media (max-width: 900px) {
+    body > div.btn-group.dropup > button {
+    width: 80px;
     height: 80px;
 	letter-spacing: 1px; /* Espacio entre letras */
 	position: fixed;
@@ -319,7 +324,7 @@ body {
 /* carousel */
 
 #carouselExampleDark{
-    background-color: #F5F5EF;
+    background-color: #C9CFBD
 }
 
 #carouselExampleDark > div.carousel-indicators > button.active{
