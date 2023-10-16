@@ -189,77 +189,58 @@ body {
 }
 
 
-/* third container desktop MIS TRABAJOS*/
-#third-container{
+/* SECCION CARDS CON SERVICIOS DESKTOP */
+.services-container {
+    height: 100vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: #C0B7B4;
-    min-height: 100vh;
-    flex-wrap: wrap;
-    justify-content: space-around;  
-}
-
-.iconos-seccion{
-    display: flex;
-    flex-direction: row;
-    background-color: #C0B7B4;
-    justify-content: space-around;
-    align-content: center;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2%;
+    background-color:#C0B7B4;
 }
 
 .titulo-seccion{
-    max-width: 100%;
     display: flex;
     justify-content: center;
 }
 
-
-
-.iconos {
-    height: 150px;
-    border-radius: 50%;
-}
-
-.iconos:hover {
-    border-radius: 50%;
-}
-
-
-
-/* third container mobile */
-
-@media (max-width: 900px) {
-
-#third-container{
+.card-container{
+    background-color: #C0B7B4;
+    display: flex;
+    flex-direction: row;
     width: 100%;
-    flex-direction: column;
-    align-content: space-around;
-    min-height: 100vh;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-between;
+}
+
+
+body > div.services-container > div.card-container > div:nth-child(n){
     background-color: #C0B7B4;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    text-align: center;
+    color: #5D4E49;
+    width: 20%;
+    border: none;
+    border-bottom: 5px solid #C9CFBD;
+    padding-bottom: 2%;
 }
 
-.iconos-seccion{
-    display: flex;
-    flex-direction: column;
-    background-color: #C0B7B4;
-    justify-content: space-around;
-    align-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
+.titulo-card{
+    color: #5D4E49;
+}
+
+.img-card{
+    width: 100%;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%
+}
+
+body > div.services-container > div.card-container > div:nth-child(n) > a {
+    color: #5D4E49;
+    font-weight: bold;
 }
 
 
-.iconos {
-    height: 90px;
-    border-radius: 50%;
-}
-}
+
 
 
 /* SECCIÓN botón contacto DESKTOP*/
@@ -333,7 +314,7 @@ body > div > div > div:nth-child(n) > a:hover {
 
 
 
-/* carousel */
+/* carousel DESKTOP*/
 
 #carouselExampleDark{
     background-color: #C9CFBD;
@@ -348,6 +329,17 @@ body > div > div > div:nth-child(n) > a:hover {
     height: 100vh;
     padding: 5% 25% 5% 25%;
 }
+
+
+
+/* ESTAS LINEAS LAS TUVE QUE AÑADIR PARA QUE AL HACER HOVER NO SE PONGA FONDO MARRÓN POR CULPA DEL CODIGO QUE APUNTA AL SELECTOR DEL BTN FLOTANTE */
+#carouselExampleDark > div.carousel-inner.carousel-fade > div.carousel-item.justify-content-center.active{
+    background-color: #C9CFBD;
+}
+#carouselExampleDark > div.carousel-inner.carousel-fade > div.carousel-item.justify-content-center:hover{
+    background-color: #C9CFBD;
+}
+/* ------------------------ */
 
 
 /* carousel mobile */
